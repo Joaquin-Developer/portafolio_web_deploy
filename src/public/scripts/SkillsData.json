@@ -1,0 +1,58 @@
+[
+    {
+        "skill": "Programación con JAVA",
+        "level": 60,
+        "tools": "NetBeans/ VS Code/ Intellij IDEA"
+    },
+    {
+        "skill": "Programación con .NET (VB.NET)",
+        "level": 70,
+        "tools": "Visual Studio IDE"
+    },
+    {
+        "skill": "Programacion con Kotlin orientada a Android",
+        "level": 35,
+        "tools": "Android Studio/ Intellij"
+    },
+    {
+        "skill": "Frontend: HTML/CSS/JavaScript",
+        "level": 60,
+        "tools": "VS Code/ XAMPP (WebServer)"
+    },
+    {
+	    "skill": "Backend con Node.js",
+	    "level": "40",
+	    "tools": "npm, node, VS Code, Postman, experiencia con sockets.io"
+    },
+    
+    {
+        "skill": "Diseño y desarrollo de Bases de Datos relacionales",
+        "level": 70,
+        "tools": "MySQL/ MariaDB/ MS SQL Server"
+    },
+    {
+        "skill": "Linux, desarrollo de Shell Scripts",
+        "level": 65,
+        "tools": "Experiencia en Ubuntu y CentOS"
+    },
+    {
+        "skill": "Windows, desarrollo de Scripts en Batch",
+        "level": 70,
+        "tools": "MS Windows"
+    },
+    {
+        "skill": "Manejo de repositorios con GIT",
+        "level": 30,
+        "tools": "GitHub"
+    },
+    {
+        "skill": "Pre-Análisis, Análisis y Diseño de software",
+        "level": 50,
+        "tools": "StarUML, Diagrams.net"
+    },
+    {
+        "skill": "Gestión y Planificación de Proyectos de TI",
+        "level": 40,
+        "tools": "GanttProject, Trello"
+    }
+]
