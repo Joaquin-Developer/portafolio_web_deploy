@@ -23,7 +23,7 @@ functions.send = (req, res) => {
         to: "joaquin77j@gmail.com",
         subject: "Solicitúd de Curriculum a través de portafolio web",
         // text: message
-        html: message + "<hr> Email del solicitante: " + emailFrom
+        html: `<p>${message}</p><hr><br>Email del solicitante: ${emailFrom}`
         // html: "<b>Hello world?</b>", // html body (example)
     };
 
