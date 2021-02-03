@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <%- include("partials/head.html") %>
+    <title>¡Pedime mi CV!</title>
+  </head>
+  <body>
+    <%- include("partials/navigation.html") %>  <!-- Nav -->
+    <div class="jumbotron" style="background-color: #fff;">
+        <h2 class="display-6">Currículum Vitae</h2>
+        <p>
+            Por motivos de privacidad de datos, retiré mi Curriculum Vitae en PDF de este sitio.
+            En caso que quieras verlo, me lo podés solicitar y te lo enviaré por correo:
+        </p>
+        <!-- <form id="formSendMail" action="https://formspree.io/f/xvovwyvr" method="POST"> -->
+        <form id="formSendMail">
+            <div class="row">
+                <div class="col">
+                    <input id="txtMail" type="email" class="form-control" required name="_replyto" placeholder="Tu Mail (Ej: nombre@direccion.com)">
+                </div>
+                <div class="col">
+                    <input id="txtName" type="text" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="col">
+                    <input id="txtCompanyName" type="text" class="form-control" placeholder="Nombre de la empresa">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtMessage">Mensaje:</label>
+                <textarea id="txtMessage" name="body" required class="form-control" rows="6"></textarea>
+            </div>
+            <p>En caso que quieras enviar un mensaje personalizado podés hacerlo borrando el mensaje por defecto.</p>
+            <button id="btnRequestForm" class="btn btn-primary" type="submit">Enviar formulario</button>
+        </form>
+    </div>
+    <!------- Footer Section -------->
+    <%- include("partials/footer.html") %>
+    <script src="scripts/SendFormCv.js"></script>   <!-- Script con las funcionalidades del form -->
+    <!-- jQuery & Bootstrap: -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
