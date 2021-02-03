@@ -2,9 +2,10 @@
  * Script con eventos para modificar texto del mensaje
  */
 
-let txtName = document.getElementById("txtName"); 
-let txtCompanyName = document.getElementById("txtCompanyName");
-let txtMensaje = document.getElementById("txtMensaje");
+const txtName = document.querySelector("#txtName"); 
+const txtCompanyName = document.querySelector("#txtCompanyName");
+const txtMessage = document.querySelector("#txtMessage");
+const txtMail = document.querySelector("#txtMail");
 
 addEventListener("load", function() {
     // datos de ejemplo al cargar el html
@@ -31,24 +32,46 @@ function setMessage() {
         "Saludos!"
     ];
 
-    txtMensaje.value = "";
-    txtMensaje.value += text[0]
-    if (txtName.value.length !== 0) txtMensaje.value += text[1];
-    if (txtCompanyName.value.length !== 0) txtMensaje.value += text[2];
-    txtMensaje.value += text[3];
-    txtMensaje.value += text[4];
+    txtMessage.value = "";
+    txtMessage.value += text[0]
+    if (txtName.value.length !== 0) txtMessage.value += text[1];
+    if (txtCompanyName.value.length !== 0) txtMessage.value += text[2];
+    txtMessage.value += text[3];
+    txtMessage.value += text[4];
 
 }
 
-// const formSendMail = document.getElementById("formSendMail");
+// REQUEST:
+document.querySelector("#btnRequestForm").addEventListener("click", function(evt) {
+    evt.preventDefault();
 
-// formSendMail.addEventListener("submit", function(event) {
-//     event.preventDefault();
-    
-//     if (document.querySelector("#txtMail").value.length === 0) {
-//         alert("Debe indicar su correo");
-//     } else {
-//         formSendMail.action = "https://formspree.io/f/xvovwyvr"; // no :)
-//     }
+    if (txtMail.value && txtMessage.value) {
 
-// });
+        fetch("/request-cv", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                email: txtMail.value,
+                message: txtMessage.value
+            })
+        })
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw "Error al realizar request";
+            }
+        })
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+    } else {
+        // show alert div error
+        console.error("data missing. form not send!");
+    }
+
+});
