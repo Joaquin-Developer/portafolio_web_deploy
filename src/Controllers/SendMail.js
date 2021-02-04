@@ -20,7 +20,7 @@ functions.send = (req, res) => {
 
     const mailOptions = {
         from: process.env.SEND_EMAIL_MAIL,
-        to: "joaquin77j@gmail.com",
+        to: "joaquin.p.olivera@gmail.com",
         subject: "Solicitúd de Curriculum a través de portafolio web",
         // text: message
         html: `<p>${message}</p><hr><br>Email del solicitante: ${emailFrom}`

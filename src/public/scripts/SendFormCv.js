@@ -44,6 +44,7 @@ function setMessage() {
 // REQUEST:
 document.querySelector("#btnRequestForm").addEventListener("click", function(evt) {
     evt.preventDefault();
+    // showAlert("sending", "Enviando solicitúd de currículum");
 
     if (txtMail.value && txtMessage.value) {
 
@@ -56,22 +57,48 @@ document.querySelector("#btnRequestForm").addEventListener("click", function(evt
             })
         })
         .then((response) => {
-            if (response.ok) {
+            console.log(`Estado: ${response.status}`);
+
+            if (response.status === 500) {
+                throw "Error interno del servidor: No se pudo completar la "
+                    + "solicitúd.\n Vuelva a intentarlo mas tarde.";
+            } else if (response.status === 200) {
+                showAlert("ok", "Solicitúd enviada con éxito");
                 return response.json();
-            } else {
-                throw "Error al realizar request";
             }
         })
-        .then((data) => {
-            console.log(data);
-        })
-        .catch((error) => {
-            console.error(error);
+        .then(data => console.log(data))
+        .catch(error => {
+            console.error(error); 
+            showAlert("error", "");
         });
 
     } else {
-        // show alert div error
         console.error("data missing. form not send!");
+        showAlert("error", "Error al enviar la solicitúd:\nDebe completar todos los datos solicitados");
     }
 
 });
+
+let requestAlert = document.getElementById("requestAlert");
+
+function showAlert(typeAlert, message) {
+    requestAlert.classList.remove("alert-danger", "alert-success");
+    // delete child of requestAlert:
+    if (requestAlert.firstChild)
+        requestAlert.removeChild(requestAlert.firstChild);
+
+    if (typeAlert === "error") {
+        requestAlert.classList.add("alert-danger")
+    } else {
+        requestAlert.classList.add("alert-success");
+    }
+
+    requestAlert.appendChild(document.createTextNode(message));
+    requestAlert.style.display = "block";  // set visibility
+
+    setTimeout(() => {
+        requestAlert.style.display = "none";  // luego de 5 seg, hacemos invisible
+    }, 5000);
+
+}
