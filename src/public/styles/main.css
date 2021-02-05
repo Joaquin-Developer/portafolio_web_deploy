@@ -192,4 +192,4 @@ a[href="#nav"] {
   transition: color 1s;
 }
 
-a[href="#nav"]:hover { color: #41A4F5; }
+a[href="#nav"]:hover { color: rgb(229, 240, 85); }

@@ -54,6 +54,6 @@ addEventListener("resize", function(event) {
 });
 
 async function getSkillsData() {
-    return await (await fetch("https://joaquin-parrilla.github.io/scripts/SkillsData.json")).json();
+    return await (await fetch("/json/SkillsData.json")).json();
 }
 
