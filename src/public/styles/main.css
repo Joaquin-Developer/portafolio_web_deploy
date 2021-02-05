@@ -185,6 +185,11 @@ hr {
   background: linear-gradient(90deg, rgba(22,125,196,1) 0%, rgba(166,200,223,1) 50%, rgba(77,100,140,1) 100%);
 }
 
-div[role="alert"] {
-  display: none;
+div[role="alert"] { display: none; }
+
+a[href="#nav"] {
+  color:#fff;
+  transition: color 1s;
 }
+
+a[href="#nav"]:hover { color: #41A4F5; }

@@ -98,7 +98,7 @@ function showAlert(typeAlert, message) {
     requestAlert.style.display = "block";  // set visibility
 
     setTimeout(() => {
-        requestAlert.style.display = "none";  // luego de 5 seg, hacemos invisible
+        requestAlert.style.display = "none";
     }, 5000);
 
 }
