@@ -7,7 +7,6 @@ functions.send = (req, res) => {
 
     const emailFrom = req.body.email;
     const message = req.body.message;
-    console.log(`Send Email Request: email: ${emailFrom}`); //, message: ${message}`);
 
     const transporter = nodemailer.createTransport(smtpTransport({
         service: "gmail",
