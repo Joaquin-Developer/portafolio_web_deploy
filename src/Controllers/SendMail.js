@@ -7,7 +7,6 @@ functions.send = (req, res) => {
 
     const emailFrom = req.body.email;
     const message = req.body.message;
-    console.log(`Send Email Request: email: ${emailFrom}`); //, message: ${message}`);
 
     const transporter = nodemailer.createTransport(smtpTransport({
         service: "gmail",
@@ -20,10 +19,10 @@ functions.send = (req, res) => {
 
     const mailOptions = {
         from: process.env.SEND_EMAIL_MAIL,
-        to: "joaquin77j@gmail.com",
+        to: "joaquin.p.olivera@gmail.com",
         subject: "Solicitúd de Curriculum a través de portafolio web",
         // text: message
-        html: message + "<hr> Email del solicitante: " + emailFrom
+        html: `<p>${message}</p><hr><br>Email del solicitante: ${emailFrom}`
         // html: "<b>Hello world?</b>", // html body (example)
     };
 

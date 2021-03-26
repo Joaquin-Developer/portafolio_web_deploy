@@ -2,12 +2,12 @@
     {
         "skill": "Programación con JAVA",
         "level": 60,
-        "tools": "NetBeans/ VS Code/ Intellij IDEA"
+        "tools": "NetBeans/Intellij IDEA, experiencia con Swing"
     },
     {
-        "skill": "Programación con .NET (VB.NET)",
-        "level": 70,
-        "tools": "Visual Studio IDE"
+        "skill": "Programación con .NET (VB.NET/C#)",
+        "level": 50,
+        "tools": "Visual Studio IDE, experienia en ASP.NET y WindowsForms"
     },
     {
         "skill": "Programacion con Kotlin orientada a Android",
@@ -17,22 +17,26 @@
     {
         "skill": "Frontend: HTML/CSS/JavaScript",
         "level": 60,
-        "tools": "VS Code/ XAMPP (WebServer)"
+        "tools": "VS Code/ experiencia con Bootstrap 5"
     },
     {
 	    "skill": "Backend con Node.js",
-	    "level": "40",
-	    "tools": "npm, node, VS Code, Postman, experiencia con sockets.io"
+	    "level": 40,
+	    "tools": "npm, node, VS Code, Postman, experiencia con sockets"
     },
-    
+    {
+	    "skill": "Programación con Python3",
+	    "level": 40,
+	    "tools": "Experiencia en creación de apis y servidores con Flask"
+    },
     {
         "skill": "Diseño y desarrollo de Bases de Datos relacionales",
         "level": 70,
         "tools": "MySQL/ MariaDB/ MS SQL Server"
     },
     {
-        "skill": "Linux, desarrollo de Shell Scripts",
-        "level": 65,
+        "skill": "Unix, desarrollo de Shell Scripts",
+        "level": 70,
         "tools": "Experiencia en Ubuntu y CentOS"
     },
     {

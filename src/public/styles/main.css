@@ -1,4 +1,13 @@
-/* About me section (index.html) */
+
+body {
+  font-family: sans-serif !important;
+}
+
+footer { 
+  color: #000 !important;
+  background: #41A4F5 !important; 
+  font-size: 14px !important;
+}
 
 .jumbotron-aboutMe {
   /*background-color: #e9ecef;*/
@@ -145,3 +154,42 @@ hr {
   color: #999
 }
 
+.backgr-transparent { background: transparent !important; }
+
+.not-found {
+  text-align: center;
+  border-top: 25px solid rgba(0, 0, 0, 0);
+}
+
+.not-found h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color:#fff;
+  padding: 0px 40px;
+  border-radius: 5px;
+  font-size: 60px;
+}
+
+.not-found p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+
+.red-error-404 {
+  background:#A93226;
+}
+
+/* has not been implemented: */
+.body-page-404 {
+  background: rgb(22,125,196);
+  background: linear-gradient(90deg, rgba(22,125,196,1) 0%, rgba(166,200,223,1) 50%, rgba(77,100,140,1) 100%);
+}
+
+div[role="alert"] { display: none; }
+
+a[href="#nav"] {
+  color:#fff;
+  transition: color 1s;
+}
+
+a[href="#nav"]:hover { color: rgb(229, 240, 85); }

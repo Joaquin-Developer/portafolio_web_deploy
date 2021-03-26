@@ -1,5 +1,5 @@
 /**
- * Funciones de index.html
+ * Index.html functions
  */
 
 function setSizeOfDivPresentation() {
@@ -48,12 +48,12 @@ addEventListener("load", function() {
     fillSkillsTable();
 });
 
-// agrego evento para modificar tamaño de div al modificar tamaño de pagina
+// add event for change size of div when change page size:
 addEventListener("resize", function(event) {
     setSizeOfDivPresentation();
 });
 
 async function getSkillsData() {
-    return await (await fetch("https://joaquin-parrilla.github.io/scripts/SkillsData.json")).json();
+    return await (await fetch("/json/SkillsData.json")).json();
 }
 
