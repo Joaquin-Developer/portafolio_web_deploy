@@ -7,7 +7,7 @@ functions.send = (req, res) => {
 
     const emailFrom = req.body.email;
     const message = req.body.message;
-    console.log(`usuario: ${process.env.SEND_EMAIL_MAIL}, pass: ${process.env.SEND_EMAIL_PASSWORD}`);
+    // console.log(`usuario: ${process.env.SEND_EMAIL_MAIL}, pass: ${process.env.SEND_EMAIL_PASSWORD}`);
 
     const transporter = nodemailer.createTransport(smtpTransport({
         service: "gmail",
