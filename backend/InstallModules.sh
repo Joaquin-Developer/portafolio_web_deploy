@@ -1,22 +1,19 @@
 #!/bin/bash
 
-# librerías que requiere el proyecto (no incluidas en el repositorio de GutHub)
-# Ejecutar este script para instalarlas
-npm i express
-npm i ejs
-npm i body-parser
-npm i dotenv
-npm i nodemailer
-npm i nodemailer-smtp-transport
-# Development dependences:
-read -p "Desea instalar dependencias? (si/no) " user
+#####################################################
+# install the dependencies that this project needs  #
+#####################################################
 
-if [ "$user" == "si" ] || [ "$user" == "SI" ]; then
-	echo "Instalando dependencias de desarrollo . . ."
+# Production dependencies:
+npm i express dotenv nodemailer nodemailer-smtp-transport cors
+
+# Development dependences:
+read -p "Do you want to install the development dependencies? (yes/no) " user
+
+if [ "$user" == "yes" ] || [ "$user" == "y" ] || [ "$user" == "YES" ]; then
+	echo "Installing development dependencies . . ."
 	npm i nodemon -D
 else
-	echo "No se instalarán las dependencias de desarrollo";
-	sleep 2;
-	clear
+	echo "Development dependencies will not be installed"
+	sleep 2; clear
 fi
-
