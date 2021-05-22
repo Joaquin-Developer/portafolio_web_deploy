@@ -2,7 +2,7 @@
 const { response } = require("express");
 const router = require("express").Router();
 require("dotenv").config();
-const sendMail = require("../Controllers/SendMail");
+const sendMail = require("../controllers/SendMail");
 
 router.get("/", function(request, response) {
     response.render("index.html");
