@@ -1,18 +1,23 @@
 
-const { response } = require("express");
-const router = require("express").Router();
+// const { response } = require("express");
+const { Router } = require("express")
+const router = Router()
 require("dotenv").config();
-const sendMail = require("../controllers/SendMail");
 
-router.get("/", function(request, response) {
-    response.render("index.html");
+const sendMailController = require("../controllers/SendMail.controllers")
+const getDataController = require("../controllers/GetData.controllers")
+
+router.get("/", (req, res) => {
+    res.send("index")
 });
 
-router.get("/curriculum", (req, res) => {
-    res.render("formToRequestCv.html");
-})
+router.get("/getAboutMeData", getDataController.getData)
 
-router.post("/request-cv", sendMail.send);
+// router.get("/curriculum", (req, res) => {
+//     res.render("formToRequestCv.html")
+// })
 
+// router.post("/request-cv", sendMailController.send)
+router.post("/sendCvRequest", sendMailController.send)
 
 module.exports = router;
