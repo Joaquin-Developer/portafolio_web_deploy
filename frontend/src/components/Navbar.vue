@@ -8,12 +8,12 @@
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#nav">Inicio
+            <a class="nav-link active" href="#presentation">Inicio
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de mí</a>
+            <a class="nav-link" href="#aboutMeSection">Acerca de mí</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Proyectos</a>
