@@ -5,59 +5,59 @@
     "skillsImages": [
         {
             "name": "Java - Desktop Apps",
-            "link": "http://localhost:5000/static/img/skills/java.jpg"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/java.jpg"
         },
         {
             "name": "HTML/CSS/Javascript",
-            "link": "http://localhost:5000/static/img/skills/html5-css3-js.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/html5-css3-js.png"
         },
         {
             "name": "C# y VB.NET",
-            "link": "http://localhost:5000/static/img/skills/NET.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/NET.png"
         },
         {
             "name": "Kotlin",
-            "link": "http://localhost:5000/static/img/skills/kotlin.jpg"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/kotlin.jpg"
         },
         {
             "name": "Node.js",
-            "link": "http://localhost:5000/static/img/skills/nodejs.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/nodejs.png"
         },
         {
             "name": "Angular",
-            "link": "http://localhost:5000/static/img/skills/angular.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/angular.png"
         },
         {
             "name": "Vue.js",
-            "link": "http://localhost:5000/static/img/skills/vuejs.jpg"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/vuejs.jpg"
         },
         {
             "name": "Python3 - Flask",
-            "link": "http://localhost:5000/static/img/skills/pythonWithFlask.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/pythonWithFlask.png"
         },
         {
             "name": "MySQL",
-            "link": "http://localhost:5000/static/img/skills/mysql.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/mysql.png"
         },
         {
             "name": "MongoDB",
-            "link": "http://localhost:5000/static/img/skills/mongodb.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/mongodb.png"
         },
         {
             "name": "Bash Scripting",
-            "link": "http://localhost:5000/static/img/skills/bash.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/bash.png"
         },
         {
             "name": "GIT",
-            "link": "http://localhost:5000/static/img/skills/git.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/git.png"
         },
         {
             "name": "Diseño de Software",
-            "link": "http://localhost:5000/static/img/skills/uml.png"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/uml.png"
         },
         {
             "name": "Gestión de Proyectos TI",
-            "link": "http://localhost:5000/static/img/skills/trello.jpg"
+            "link": "https://joaquinparrilla.herokuapp.com/static/img/skills/trello.jpg"
         }
     ],
     "projects": [
