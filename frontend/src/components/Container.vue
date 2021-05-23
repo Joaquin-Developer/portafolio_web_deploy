@@ -1,8 +1,7 @@
 <template>
-<div class="row">
+<div class="row" id="presentation">
   <div class="col-md-5 center profilePhotoSection"> <!-- col-md-4  -->
     <img class="profilePhoto" src="../assets/FotoPerfil.jpg" width="280" height="220">
-    <!-- <hr class="verticalHr"> -->
   </div>
   <div class="col-md-7 center contentCenter"> <!-- col-md-8  -->
     <div class="contentCenterChild">
@@ -13,26 +12,49 @@
     
   </div>
 </div>
-<div>
+<div id="aboutMeSection">
   <br>
   <h2>Acerca de mí</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque nihil magnam similique libero veniam ipsa quam laborum sequi tenetur minus ex quo, voluptates eum consequatur ad aliquid ipsam natus.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda cum quo quia explicabo blanditiis dolorum aperiam. Debitis, qui reiciendis ad deleniti cum laboriosam magni consectetur. Veritatis saepe animi consequuntur.
-  </p>
+  <p>{{ aboutMeData }}</p>
+  <hr class="white">
+  <h2>Tecnologías con las que trabajo:</h2><br>
+  <img v-for="data in skillsData" v-bind:key="data" 
+    v-bind:src="data.link" width="180" height="120" class="skillsPhotos">
+  <!-- <ul v-for="data in skillsData" v-bind:key="data">
+    <li>{{ data.link }}</li>
+  </ul> -->
+    
 </div>
 
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Container',
-  props: {
-    
-  },
-  data: function() {
-    return { }
+
+  props: { },
+
+  data: () => ({
+    aboutMeData: null,
+    skillsData: null,
+
+  }),
+
+  created() {
+    console.log("%c¡Bienvenido/a a mi portafolio!", 
+      "font: 3em Arial; color: #32fbe2; background-color: #1a0933;")
+
+    axios.get("http://localhost:5000/api/getAboutMeData")
+    .then(result => {
+      // console.log(result.data)
+      this.skillsData = result.data.skillsImages
+      this.aboutMeData = result.data.aboutMe.paragraph
+    })
+
   }
+
 }
 </script>
 
@@ -48,6 +70,13 @@ export default {
   width:300px;
   height:300px;
   border-radius:150px;
+}
+
+.skillsPhotos { 
+  border-radius:150px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 2px;
 }
 
 </style>

@@ -1,62 +1,70 @@
-[
-    {
-        "skill": "Programación con JAVA",
-        "level": 60,
-        "tools": "NetBeans/Intellij IDEA, experiencia con Swing"
+{
+    "aboutMe": {
+        "paragraph": "Soy un desarrollador con sólidos conocimientos a nivel de frontend como de backend. Actualmente me encuentro estudiando Ingeniería en Computación en el primer año de la carrera. Antes de la facultad cursé un bachillerato en informática donde tuve mi primer contacto con el mundo del desarrollo. Además de mis estudios formales, me encuentro constantemente aprendiendo de forma autodidacta, a tal punto que la gran parte de las tecnologías que uso las aprendí de esta forma. En cuanto a lo personal, además de la programación, me gusta la matemática, la ciencia, y todo lo relacionado con la tecnología."
     },
-    {
-        "skill": "Programación con .NET (VB.NET/C#)",
-        "level": 50,
-        "tools": "Visual Studio IDE, experienia en ASP.NET y WindowsForms"
-    },
-    {
-        "skill": "Programacion con Kotlin orientada a Android",
-        "level": 35,
-        "tools": "Android Studio/ Intellij"
-    },
-    {
-        "skill": "Frontend: HTML/CSS/JavaScript",
-        "level": 60,
-        "tools": "VS Code/ experiencia con Bootstrap 5"
-    },
-    {
-	    "skill": "Backend con Node.js",
-	    "level": 40,
-	    "tools": "npm, node, VS Code, Postman, experiencia con sockets"
-    },
-    {
-	    "skill": "Programación con Python3",
-	    "level": 40,
-	    "tools": "Experiencia en creación de apis y servidores con Flask"
-    },
-    {
-        "skill": "Diseño y desarrollo de Bases de Datos relacionales",
-        "level": 70,
-        "tools": "MySQL/ MariaDB/ MS SQL Server"
-    },
-    {
-        "skill": "Unix, desarrollo de Shell Scripts",
-        "level": 70,
-        "tools": "Experiencia en Ubuntu y CentOS"
-    },
-    {
-        "skill": "Windows, desarrollo de Scripts en Batch",
-        "level": 70,
-        "tools": "MS Windows"
-    },
-    {
-        "skill": "Manejo de repositorios con GIT",
-        "level": 30,
-        "tools": "GitHub"
-    },
-    {
-        "skill": "Pre-Análisis, Análisis y Diseño de software",
-        "level": 50,
-        "tools": "StarUML, Diagrams.net"
-    },
-    {
-        "skill": "Gestión y Planificación de Proyectos de TI",
-        "level": 40,
-        "tools": "GanttProject, Trello"
-    }
-]
+    "skillsImages": [
+        {
+            "name": "Java - Desktop Apps",
+            "link": "http://localhost:5000/static/img/skills/java.jpg"
+        },
+        {
+            "name": "HTML/CSS/Javascript",
+            "link": "http://localhost:5000/static/img/skills/html5-css3-js.png"
+        },
+        {
+            "name": "C# y VB.NET",
+            "link": "http://localhost:5000/static/img/skills/NET.png"
+        },
+        {
+            "name": "Kotlin",
+            "link": "http://localhost:5000/static/img/skills/kotlin.jpg"
+        },
+        {
+            "name": "Node.js",
+            "link": "http://localhost:5000/static/img/skills/nodejs.png"
+        },
+        {
+            "name": "Angular",
+            "link": "http://localhost:5000/static/img/skills/angular.png"
+        },
+        {
+            "name": "Vue.js",
+            "link": "http://localhost:5000/static/img/skills/vuejs.jpg"
+        },
+        {
+            "name": "Python3 - Flask",
+            "link": "http://localhost:5000/static/img/skills/pythonWithFlask.png"
+        },
+        {
+            "name": "MySQL",
+            "link": "http://localhost:5000/static/img/skills/mysql.png"
+        },
+        {
+            "name": "MongoDB",
+            "link": "http://localhost:5000/static/img/skills/mongodb.png"
+        },
+        {
+            "name": "Bash Scripting",
+            "link": "http://localhost:5000/static/img/skills/bash.png"
+        },
+        {
+            "name": "GIT",
+            "link": "http://localhost:5000/static/img/skills/git.png"
+        },
+        {
+            "name": "Diseño de Software",
+            "link": "http://localhost:5000/static/img/skills/uml.png"
+        },
+        {
+            "name": "Gestión de Proyectos TI",
+            "link": "http://localhost:5000/static/img/skills/trello.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "name": null,
+            "description": null,
+            "linkPhoto": null
+        }
+    ]
+}

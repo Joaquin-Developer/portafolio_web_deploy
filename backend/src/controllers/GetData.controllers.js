@@ -1,7 +1,8 @@
 const getDataController = {}
 
 getDataController.getData = (req, res) => {
-    res.json({ "status": true })
+    const data = require("../public/json/SkillsData.json")
+    res.json(data)
 }
 
 module.exports = getDataController
