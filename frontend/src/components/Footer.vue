@@ -1,4 +1,5 @@
 <template>
+<br><br><br><br><br>
   <footer class="footer py-5 bg-light">
     <div class="container">
       <div class="row footer_inner">
@@ -9,7 +10,7 @@
             </div>
             <p>
               Este portafolio web fué desarrollado con Vue.js. Puedes acceder al código
-              <a href="">aquí</a>
+              <a href="https://github.com/Joaquin-Parrilla/portafolio_web_deploy">aquí</a>
             </p>
             <p>Copyright &copy; 2021 | Todos los derechos reservados.</p>
           </aside>
