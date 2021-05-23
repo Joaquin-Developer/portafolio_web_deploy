@@ -1,14 +1,16 @@
 <template>
   <Navbar/>
   <div class="container">
-    <Container/>  
-    <Footer/>  
+    <Container/>
+    <ProjectsSection/>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import Container from './components/Container.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     Navbar,
     Container,
+    ProjectsSection,
     Footer
   }
 }
