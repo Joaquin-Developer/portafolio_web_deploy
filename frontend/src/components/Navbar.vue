@@ -16,7 +16,10 @@
             <a class="nav-link" href="#aboutMeSection">Acerca de mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
+            <a class="nav-link" href="#myProjectsSection">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Joaquin-Parrilla/">GitHub</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Curriculum</a>

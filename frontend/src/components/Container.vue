@@ -23,9 +23,8 @@
   <!-- <ul v-for="data in skillsData" v-bind:key="data">
     <li>{{ data.link }}</li>
   </ul> -->
-    
+  <hr class="white" id="myProjectsSection">
 </div>
-
 </template>
 
 <script>
@@ -46,7 +45,7 @@ export default {
     console.log("%c¡Bienvenido/a a mi portafolio!", 
       "font: 3em Arial; color: #32fbe2; background-color: #1a0933;")
 
-    axios.get("http://localhost:5000/api/getAboutMeData")
+    axios.get("https://joaquinparrilla.herokuapp.com/api/getAboutMeData")
     .then(result => {
       // console.log(result.data)
       this.skillsData = result.data.skillsImages
