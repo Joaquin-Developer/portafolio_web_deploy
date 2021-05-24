@@ -19,5 +19,9 @@ router.get("/getAboutMeData", getDataController.getData)
 
 // router.post("/request-cv", sendMailController.send)
 router.post("/sendCvRequest", sendMailController.send)
+router.post("/test", function(req, res) {
+    console.log(req.body)
+    res.send("ok")
+})
 
 module.exports = router;

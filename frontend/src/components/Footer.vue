@@ -1,6 +1,6 @@
 <template>
 <br><br><br><br><br>
-  <footer class="footer py-5 bg-light">
+  <footer id="footer" class="footer py-5 bg-light">
     <div class="container">
       <div class="row footer_inner">
         <div class="col-lg-5 col-sm-6">
@@ -22,14 +22,16 @@
             </div>
             <p>Solicitame mi cv y te lo mando por correo!</p>
             <div id="mc_embed_signup">
-              <form>
+              <!-- this event is executed only once, without reloading the page: -->
+              <form @submit.prevent.once="sendCvRequest">
                 <div class="input-group d-flex flex-row">
-                  <input
+                  <input 
+                    v-model="mailValue"
                     class="form-control me-sm-2"
                     type="email"
                     placeholder="Tu correo"
                   />
-                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                  <button type="submit" class="btn btn-secondary my-2 my-sm-0">
                     Enviar
                   </button>
                 </div>
@@ -72,12 +74,34 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "Footer",
-  props: {},
-  data: () => ({}),
+  props: { },
+
+  data: () => {
+    return {
+      mailValue: null
+    }
+  },
 
   created() {},
+
+  methods: {
+    sendCvRequest () {
+      axios.post("http://localhost:5000/api/test", { "mail": this.mailValue })
+      .then(res => {
+        console.log(res.status)
+        alert("Solicitud enviada.")
+      })
+      .catch(error => { 
+        console.error(error)
+        alert("Se produjo un error al enviar el correo, vuelva a intentarlo.")
+      })  
+
+    }
+  }
+
 };
 </script>
 

@@ -14,7 +14,7 @@
             Sistema desarrollado en .NET que permite obtener un diagnóstico médico a partir de síntomas y tener un chat con un médico.
           </p>
           <div class="contentCenter">
-            <img src="https://joaquin-parrilla.github.io/media/img/sistemaTelediagnosticoFrontend.png" width="200" height="140">
+            <img src="https://joaquinparrilla.herokuapp.com/static/img/sistemaTelediagnosticoFrontend.png" width="200" height="140">
           </div>
           <a href="https://github.com/Joaquin-Parrilla/Sistema_Telediagnostico_Medico" class="card-link">Código en GitHub</a>
         </div>
@@ -29,7 +29,7 @@
             Scripts para hacer tareas típicas de mantenimiento, monitoreo, gestión, respaldos, etc, en un sistema RedHat 
           </p><br>
           <div class="contentCenter">
-            <img src="https://joaquin-parrilla.github.io/media/img/centroComputos.jpeg" width="200" height="140">
+            <img src="https://joaquinparrilla.herokuapp.com/static/img/centroComputos.jpeg" width="200" height="140">
           </div>
           <a href="https://github.com/Joaquin-Parrilla/Scripts_Gestion_Monitoreo_Config_CentOS" class="card-link">Código en GitHub</a>
         </div>
@@ -44,7 +44,7 @@
             Aplicación web que se encarga de consumir una API y mostrar los datos mas relevantes del Covid-19 en Uruguay y en el mundo.
           </p>
           <div class="contentCenter">
-            <img src="https://joaquin-parrilla.github.io/media/img/CovidEnVivo.png" width="200" height="140">
+            <img src="https://joaquinparrilla.herokuapp.com/static/img/CovidEnVivo.png" width="200" height="140">
           </div>
           <a href="https://github.com/Joaquin-Parrilla/CovidEnVivo" class="card-link">Código en GitHub</a>
           <a href="https://joaquin-parrilla.github.io/CovidEnVivo/" class="card-link">Usar la app</a>
