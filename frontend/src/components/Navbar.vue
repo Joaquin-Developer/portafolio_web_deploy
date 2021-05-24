@@ -22,7 +22,7 @@
             <a class="nav-link" href="https://github.com/Joaquin-Parrilla/">GitHub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Curriculum</a>
+            <a class="nav-link" href="#footer">Curriculum</a>
           </li>
         </ul>
         <!-- <form class="d-flex">
