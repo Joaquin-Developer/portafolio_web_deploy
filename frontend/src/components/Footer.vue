@@ -89,7 +89,7 @@ export default {
 
   methods: {
     sendCvRequest () {
-      axios.post("http://localhost:5000/api/test", { "mail": this.mailValue })
+      axios.post("https://joaquinparrilla.herokuapp.com/api/sendCvRequest", { "mail": this.mailValue })
       .then(res => {
         console.log(res.status)
         alert("Solicitud enviada.")
