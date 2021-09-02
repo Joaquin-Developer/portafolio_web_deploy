@@ -18,13 +18,25 @@
   <p>{{ aboutMeData }}</p>
   <hr class="white">
   <h2>Tecnologías con las que trabajo:</h2><br>
+  <div class="cardContent skills">
+    <div class="skill card border-info" v-for="(data, index) in skillsData" v-bind:key="index">
+      <div class="contentCenter">
+        <img class="skill_image" v-bind:src="data.link">
+      </div>
+      <div class="text_skill center">
+        {{ data.name }}
+      </div>
+    </div>
+  </div>
+
+<!--   
   <img v-for="data in skillsData" v-bind:key="data" 
-    v-bind:src="data.link" width="180" height="120" class="skillsPhotos">
+    v-bind:src="data.link" width="180" height="120" class="skillsPhotos"> -->
   <!-- <ul v-for="data in skillsData" v-bind:key="data">
     <li>{{ data.link }}</li>
   </ul> -->
   <!-- <v-gallery ></v-gallery> -->
-  <v-gallery :images="skillsImages || []" :dark="true" :caption="true" ></v-gallery>
+  <!-- <v-gallery :images="skillsImages || []" :dark="true" :caption="true" ></v-gallery> -->
   <hr class="white" id="myProjectsSection">
 </div>
 </template>
@@ -74,11 +86,51 @@ export default {
   border-radius:150px;
 }
 
-.skillsPhotos { 
-  border-radius:150px;
+.skill {
+  padding: 1em 1em  0.1em 1em;
+}
+
+.skill_image {
+  align-items: center;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   padding-right: 4px;
   padding-left: 4px;
   padding-bottom: 2px;
+}
+
+.text_skill {
+  margin: 0%;
+  padding: 0%;
+}
+
+@media (max-width: 560px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 767px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 977px) {
+  .skills {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+@media (min-width: 978px) {
+  .skills {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
 }
 
 </style>
