@@ -23,12 +23,15 @@
   <!-- <ul v-for="data in skillsData" v-bind:key="data">
     <li>{{ data.link }}</li>
   </ul> -->
+  <!-- <v-gallery ></v-gallery> -->
+  <v-gallery :images="skillsImages || []" :dark="true" :caption="true" ></v-gallery>
   <hr class="white" id="myProjectsSection">
 </div>
 </template>
 
 <script>
 import axios from 'axios'
+// import vGallery from 'v-gallery'
 
 export default {
   name: 'Container',
@@ -47,7 +50,7 @@ export default {
 
     axios.get("https://joaquinparrilla.herokuapp.com/api/getAboutMeData")
     .then(result => {
-      // console.log(result.data)
+      // console.log(result.data.skillsImages)
       this.skillsData = result.data.skillsImages
       this.aboutMeData = result.data.aboutMe.paragraph
     })

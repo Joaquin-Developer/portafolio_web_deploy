@@ -89,10 +89,13 @@ export default {
 
   methods: {
     sendCvRequest () {
-      axios.post("https://joaquinparrilla.herokuapp.com/api/sendCvRequest", { "mail": this.mailValue })
+      axios.post("https://joaquinparrilla.herokuapp.com/api/sendCvRequest",
+        { "mail": this.mailValue })
       .then(res => {
-        console.log(res.status)
-        alert("Solicitud enviada.")
+        if (res.data.status)
+          alert("Solicitud enviada.")
+        else
+          alert("Se produjo un error al enviar el correo, vuelva a intentarlo.")  
       })
       .catch(error => { 
         console.error(error)

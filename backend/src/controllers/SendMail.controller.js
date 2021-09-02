@@ -21,17 +21,17 @@ sendMailController.send = (req, res) => {
         to: "joaquin.p.olivera@gmail.com",
         subject: "Solicitúd de Curriculum a través de portafolio web",
         // text: message
-        html: `<p>$El siguiente correo solicitó una copia del CV:</p><hr><strong>${emailFrom}</strong>`
+        html: `<p>El siguiente correo solicitó una copia del CV:</p><hr><strong>${emailFrom}</strong>`
         // html: `<p>${message}</p><hr><br>Email del solicitante: ${emailFrom}`
     }
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error)
-            res.status(500).send("Error al enviar CV")
+            res.json({ message: "Error al enviar CV", error: error })
         } else {
             console.log('Email sent: ' + info.response)
-            res.status(200).send({ estado: "ok", datos: { email: emailFrom, message: message }})
+            res.status(200).send({ status: true, data: { email: emailFrom }})
         }
     })
 
