@@ -66,7 +66,7 @@
     </div>
   </div> -->
   
-  <div class="projects">
+  <div class="cardContent projects">
 
     <div class="project card border-info">
       <div class="contentCenter">
@@ -142,21 +142,6 @@ export default {
 <style scoped>
 
 h4 { text-align: center; }
-
-.projects 
-{
-  max-width: 1000px;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  box-sizing: border-box;
-  margin-bottom: 2em; 
-  display: grid;
-  grid-template-columns: repeat(1, 1fr) !important;
-  grid-gap: 30px;
-}
 
 .project {
 

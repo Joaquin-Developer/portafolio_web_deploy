@@ -28,6 +28,20 @@ hr.white {
 
 .imagesCenter { align-items: center; }
 
+.cardContent {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    box-sizing: border-box;
+    margin-bottom: 2em; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 30px;
+}
+
 @media (max-width: 767px) {
     .profilePhotoSection {
         border-bottom: grey 1px solid;
