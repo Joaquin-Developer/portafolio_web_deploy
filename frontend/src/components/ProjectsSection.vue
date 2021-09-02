@@ -77,8 +77,10 @@
           <h4>App para Organizar Tareas</h4>
         </div>
         <p>Applicación web para organizar mis tareas del día a día.</p>
-        <a href="https://github.com/Joaquin-Parrilla/organiza_mi_dia" class="card-link">Código en GitHub</a>
-        <a href="http://joaquindeveloper.pythonanywhere.com/" class="card-link">Usar la app</a>
+        <div class="card-footer">
+          <a href="https://github.com/Joaquin-Parrilla/organiza_mi_dia" class="card-link">Código en GitHub</a>
+          <a href="http://joaquindeveloper.pythonanywhere.com/" class="card-link">Usar la app</a>
+        </div>
       </div>
     </div>
 
@@ -91,7 +93,9 @@
           <h4>Sistema de Telediagnóstico Médico</h4>
         </div>
         <p>Aplicación de escritorio que permite obtener un diagnóstico médico a partir de síntomas y tener un chat con un médico.</p>
-        <a href="https://github.com/Joaquin-Parrilla/Sistema_Telediagnostico_Medico" class="card-link">Código en GitHub</a>
+        <div class="card-footer">
+          <a href="https://github.com/Joaquin-Parrilla/Sistema_Telediagnostico_Medico" class="card-link">Código en GitHub</a>
+        </div>
       </div>
     </div>
 
@@ -104,6 +108,9 @@
           <h4>Scripts para gestionar servidor CentOS</h4>
         </div>
         <p>Scripts para hacer tareas típicas de mantenimiento, monitoreo, gestión, respaldos, etc, en un sistema RedHat </p>
+        <div class="card-footer">
+          <a href="https://github.com/Joaquin-Parrilla/Scripts_Gestion_Monitoreo_Config_CentOS" class="card-link">Código en GitHub</a>
+        </div>
       </div>
     </div>
 
@@ -113,9 +120,13 @@
       </div>
       <div class="text_project">
         <div class="card-header">
-          <h4>Seguimiento del Covid-19 en Vivo</h4>
+          <h4>Monitoreo del Covid-19 en Vivo</h4>
         </div>
         <p>Aplicación web que se encarga de consumir una API y mostrar los datos mas relevantes del Covid-19 en Uruguay y en el mundo.</p>
+        <div class="card-footer">
+          <a href="https://github.com/Joaquin-Parrilla/CovidEnVivo" class="card-link">Código en GitHub</a>
+          <a href="https://joaquin-parrilla.github.io/CovidEnVivo/" class="card-link">Usar la app</a>
+        </div>
       </div>
     </div>
   </div>
@@ -143,9 +154,16 @@ export default {
 
 h4 { text-align: center; }
 
-.project {
+.card-footer {
+  font-size: 15px !important;
+  /* padding-bottom: 1em; */
+  position: absolute !important;
+  bottom: 0 !important;
+}
 
-  padding: 1em;
+.project {
+  /* padding: 1em; */
+  padding: 1em 1em  0.5em 1em;
 }
 
 .project_image {
